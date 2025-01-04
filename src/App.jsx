@@ -4,7 +4,7 @@ import './App.css'; // Make sure this file exists
 function App() {
   return (
     <main>
-      <Outlet /> {/* Render child routes here */}
+      <Outlet /> 
     </main>
   );
 }
