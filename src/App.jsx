@@ -1,15 +1,17 @@
-import { Outlet } from 'react-router-dom';
-import './App.css'; // Make sure this file exists
-import Header from './components/Header';
+import { useState } from 'react'
+
+
+import './App.css'
+import { Outlet } from 'react-router-dom'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <main>
-      <Header />
-      <Outlet /> 
-      <footer />
+    <main >
+      <Outlet/>
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
