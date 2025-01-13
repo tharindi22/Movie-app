@@ -15,6 +15,7 @@ const Navbar = () => {
           <li>Contact</li>
           <li>Service</li>
         </ul>
+        
       </div>
     </div>
   );
