@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import MovieCard from './components/MovieCard';
 
+
 const App = () => {
   const [allMovieData, setAllMovieData] = useState([]);
   const [search, setSearch] = useState('');
@@ -28,7 +29,12 @@ const App = () => {
       <div className="bg-gray-800 min-h-screen">
         <SearchBar search={search} setSearch={setSearch} onSearch={fetchMovieData} />
         <MovieCard movies={allMovieData} loading={loading} />
+        
       </div>
+      
+      
+        
+      
     </div>
   );
 };
